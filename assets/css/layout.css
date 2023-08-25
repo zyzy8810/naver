@@ -4,10 +4,7 @@
 
 
 /* 큰 틀 */
-.wrapper{
-  min-width: 1190px;
-}
-
+.wrapper{ min-width: 1190px; }
 
 
 /* 헤더 */
