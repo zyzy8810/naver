@@ -1,87 +1,17 @@
-/* 공통요소 - 누구나 쓸 수 있는 공통클래스 */
+/* 공통요소*/
 
-
-.blind{
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0,0,0,0);
-  margin: -1px;
+.blind{ position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); margin: -1px;
 }
 
-.thumb-bd{
-  position: relative;
-  display: block;
-}
-.thumb-bd::after{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: 1px solid #000;
-  content: '';
-  opacity: 0.1;
-}
+/* 이미지 보더 */
+.thumb-bd{ position: relative; display: block; }
+.thumb-bd::after{ position: absolute; top: 0; left: 0; right: 0; bottom: 0; border: 1px solid #000; content: ''; opacity: 0.1; }
 
 
 /* sp이미지 */
+.sc-shop .shop-header .link-shop a::before, .footer .partner-item .link-partner+.link-partner::before, .footer .footer-inner .notice-wrap .link-all::after, .sc-themepost .contents .btn-wrap .btn-more .ic-more::before, .sc-themepost .theme-title a.title::after, .sc-themepost .media-view .date:before, .sc-themepost .contents .media-view-wrap .media-view .ico-play::before, .sc-themepost .contents .group-top .top-inner .top-view a .ico-play::before, .sc-themepost .group-category .btn-prev::before, .sc-themepost .group-category .btn-next::before, .sc-themepost .group-title .info-area .btn-set::before, .sc-themepost .group-title .info-area .btn-set::after, .sc-news .group-issue .issue-area .link-media::after, .sc-sidenews .nav-wrap .btn-nav::before, .sc-login .sub-area .link-join::before, .sc-login .sub-area .link-id::before, .sc-login .sub-area .link-find::before, .sc-login .link-login::before, .sc-news .group-title .sort-area .btn-sort.active::before, .sc-news .group-title .link-title::after, .sc-news .group-title .link-title::before, .sc-news .group-title .set-area .btn-set::before, .gnb .group-weather .degree-red::before, .gnb .group-nav .btn-more::after, .gnb .group-nav .nav-item .nav.ic-mail::before, .gnb .group-nav .nav-item .nav.ic-shop::before, .gnb .group-nav .nav-item .nav.ic-shoplive::before, .gnb .group-nav .nav-item .nav.ic-tv::before, .header .service-area .link-start::after, .header .service-area .link-junior::after, .header .service-area .link-bin::after, .header .search-area .btn-submit::before, .header .logo-area .logo a::before{ background-image: url(../images/sp-bg.png); background-size: 442px; background-repeat: no-repeat; }
 
+.sc-shop .group-plusdeal .title-area .link-logo::before, .sc-shop .btn-box .btn::before, .sc-shop .btn-box .prev::before, .sc-shop .btn-box .next::before, .sc-shop .contents .group-mall .mall-area .link-mall + .link-mall::before, .sc-shop .shop-header .link-shop a::before, .sc-shop .shop-header .link-shop a::after{ background-image: url(../images/sp-shop.png); background-size: 129px; background-repeat: no-repeat; }
 
-.sc-shop .shop-header .link-shop a::before,
-.footer .partner-item .link-partner+.link-partner::before,
-.footer .footer-inner .notice-wrap .link-all::after,
-.sc-themepost .contents .btn-wrap .btn-more .ic-more::before,
-.sc-themepost .theme-title a.title::after,
-.sc-themepost .media-view .date:before,
-.sc-themepost .contents .media-view-wrap .media-view .ico-play::before,
-.sc-themepost .contents .group-top .top-inner .top-view a .ico-play::before,
-.sc-themepost .group-category .btn-prev::before,
-.sc-themepost .group-category .btn-next::before,
-.sc-themepost .group-title .info-area .btn-set::before,
-.sc-themepost .group-title .info-area .btn-set::after,
-.sc-news .group-issue .issue-area .link-media::after,
-.sc-sidenews .nav-wrap .btn-nav::before,
-.sc-login .sub-area .link-join::before,
-.sc-login .sub-area .link-id::before,
-.sc-login .sub-area .link-find::before,
-.sc-login .link-login::before,
-.sc-news .group-title .sort-area .btn-sort.active::before,
-.sc-news .group-title .link-title::after,
-.sc-news .group-title .link-title::before,
-.sc-news .group-title .set-area .btn-set::before,
-.gnb .group-weather .degree-red::before,
-.gnb .group-nav .btn-more::after,
-.gnb .group-nav .nav-item .nav.ic-mail::before,
-.gnb .group-nav .nav-item .nav.ic-shop::before,
-.gnb .group-nav .nav-item .nav.ic-shoplive::before,
-.gnb .group-nav .nav-item .nav.ic-tv::before,
-.header .service-area .link-start::after,
-.header .service-area .link-junior::after,
-.header .service-area .link-bin::after,
-.header .search-area .btn-submit::before,
-.header .logo-area .logo a::before{
-  background-image: url(../images/sp-bg.png);
-  background-size: 442px;
-  background-repeat: no-repeat;
-}
-
-.sc-shop .group-plusdeal .title-area .link-logo::before,
-.sc-shop .btn-box .btn::before,
-.sc-shop .btn-box .prev::before,
-.sc-shop .btn-box .next::before,
-.sc-shop .contents .group-mall .mall-area .link-mall + .link-mall::before,
-.sc-shop .shop-header .link-shop a::before,
-.sc-shop .shop-header .link-shop a::after{
-  background-image: url(../images/sp-shop.png);
-  background-size: 129px;
-  background-repeat: no-repeat;
-}
-
-.gnb .group-weather .weather-area::before{
-  background-image: url(../images/sp-wt.png);
-  background-repeat: no-repeat;
-  background-size: 215px;
-}
+.gnb .group-weather .weather-area::before{ background-image: url(../images/sp-wt.png); background-repeat: no-repeat; background-size: 215px; }
 
